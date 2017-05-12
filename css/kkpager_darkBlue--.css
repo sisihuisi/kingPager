@@ -1,0 +1,27 @@
+.pagination-wrapper{ clear:both; color:#fff; padding:5px 0px 5px 0px; font-size:12px; }
+.pagination-wrapper a,.pagination-wrapper span.curr,.pagination-wrapper span.disabled{
+	display: inline-block; text-decoration: none; margin: 0 4px;
+	-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;color: #fff;padding:0 10px;
+	height:26px;line-height:26px;font-size:12px;letter-spacing:1px;word-spacing:normal;text-align:center;
+	vertical-align:middle;cursor:pointer; background: none; border: 1px solid #466cad;
+}
+.pagination-wrapper span.disabled{ color: #96a2d0; cursor: auto}
+.pagination-wrapper span.curr{ border: 1px solid #00a0e9; background: #00a0e9; color: #fff; }
+.pagination-wrapper a:hover{ border:1px solid #31ACE2; background-color:#31ACE2; color:#fff; }
+.pagination-wrapper span.normalsize{ display: inline-block; }
+.kkpager_gopage_wrap,.pagination-wrapper .gopageWrap{ position:relative; left:0px; top:0px; }
+#kkpager_btn_go,.pagination-wrapper .gopageBtn {
+	width:44px;height:26px;line-height:26px; overflow:hidden; display:none; border: none;
+	text-align:center; cursor:pointer; background-color:#31ACE2; color:#FFF;position:absolute; left:0px; top:-6px;
+}
+#kkpager_btn_go_input,.pagination-wrapper .gopageText{
+	width:30px; height:22px;line-height:22px; color:#333; text-align:center;
+	margin-left:4px; margin-right:4px; border:1px solid #DFDFDF;
+	position:relative; left:0px; top:0px; outline:none;
+}
+.kkpager_btn_go_input.focus{border-color:#31ACE2; }
+.pagination-wrapper .pageBtnWrap{ float:left;}
+.pagination-wrapper .infoTextAndGoPageBtnWrap{ float:right;}
+.pagination-wrapper .spanDot{ float:left; margin-right:5px;}
+.pagination-wrapper .currPageNum{ color:#FD7F4D; display: inline-block; margin-left: 2px; margin-right: 2px;}
+.pagination-wrapper .infoTextAndGoPageBtnWrap{ display: inline-block; margin-left: 2px; margin-right: 2px;}
