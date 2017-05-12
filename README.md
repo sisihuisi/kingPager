@@ -1,5 +1,5 @@
-kingPaging  根据kkpager分页插件修改来的,可以一个页面定义多个分页
-=======================
+####kingPaging  根据kkpager分页插件修改来的,可以一个页面定义多个分页
+
 pager_darkBlue2.html  
 
 ```html
@@ -18,40 +18,40 @@ if(!pageNo){pageNo = 1;}
 
 $(function(){
 	var obj1 = {
-			pno : pageNo,//当前页
-			total : totalPage,//总页码
-			totalRecords : totalRecords,//总数据条数
-			mode : 'click',//默认值是link，可选link或者click
-			isShowFirstPageBtn  : true, //是否显示首页按钮
-	        isShowLastPageBtn   : true, //是否显示尾页按钮
-	        isShowPrePageBtn    : true, //是否显示上一页按钮
-	        isShowNextPageBtn   : true, //是否显示下一页按钮
-	        isShowCurrPage		: true, //是否显示当前页
-	        isShowTotalPage     : true, //是否显示总页数
-	        isShowTotalRecords  : false, //是否显示总记录数
-	        isGoPage            : true, //是否显示页码跳转输入框
-	        isWrapedPageBtns	: true,	//是否用span包裹住页码按钮
-			isWrapedInfoTextAndGoPageBtn : true, //是否用span包裹住分页信息和跳转按钮
-			click : function(n){
-					this.selectPage(n);
-					return false;
-			}
+		pno : pageNo,//当前页
+		total : totalPage,//总页码
+		totalRecords : totalRecords,//总数据条数
+		mode : 'click',//默认值是link，可选link或者click
+		isShowFirstPageBtn  : true, //是否显示首页按钮
+		isShowLastPageBtn   : true, //是否显示尾页按钮
+		isShowPrePageBtn    : true, //是否显示上一页按钮
+		isShowNextPageBtn   : true, //是否显示下一页按钮
+		isShowCurrPage		: true, //是否显示当前页
+		isShowTotalPage     : true, //是否显示总页数
+		isShowTotalRecords  : false, //是否显示总记录数
+		isGoPage            : true, //是否显示页码跳转输入框
+		isWrapedPageBtns	: true,	//是否用span包裹住页码按钮
+		isWrapedInfoTextAndGoPageBtn : true, //是否用span包裹住分页信息和跳转按钮
+		click : function(n){
+				this.selectPage(n);
+				return false;
+		}
 	};
 	var obj2  = {
-			pno : pageNo,//当前页
-			total : totalPage,//总页码
-			totalRecords : totalRecords,//总数据条数
-			mode : 'click',//默认值是link，可选link或者click
-			click : function(n){
-					this.selectPage(n);
-					return false;
-			}
-//			mode : 'link',//默认值是link，可选link或者click
-//			hrefFormer:"kingPager",
-//			hrefLatter: '.html', //链接尾部
-//			getLink:function(n){
-//					return this.hrefFormer + this.hrefLatter + "?pno="+n+"&kingPager=2";
-//			}
+		pno : pageNo,//当前页
+		total : totalPage,//总页码
+		totalRecords : totalRecords,//总数据条数
+		mode : 'click',//默认值是link，可选link或者click
+		click : function(n){
+				this.selectPage(n);
+				return false;
+		}
+//		mode : 'link',//默认值是link，可选link或者click
+//		hrefFormer:"kingPager",
+//		hrefLatter: '.html', //链接尾部
+//		getLink:function(n){
+//		return this.hrefFormer + this.hrefLatter + "?pno="+n+"&kingPager=2";
+//		}
 	};
    $("#kingPager").kingPager(obj1);
    $("#kingPager2").kingPager(obj1);
