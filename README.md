@@ -1,4 +1,4 @@
-kingPaging  根据kkpager分页插件修改来的
+kingPaging  根据kkpager分页插件修改来的---
 =======
 pager_darkBlue2.html
 
