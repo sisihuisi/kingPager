@@ -32,7 +32,6 @@ $(function(){
 	        isGoPage            : true, //是否显示页码跳转输入框
 	        isWrapedPageBtns	: true,	//是否用span包裹住页码按钮
 			isWrapedInfoTextAndGoPageBtn : true, //是否用span包裹住分页信息和跳转按钮
-			
 			click : function(n){
 					this.selectPage(n);
 					return false;
