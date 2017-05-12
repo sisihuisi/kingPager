@@ -1,6 +1,6 @@
-kingPaging  根据kkpager分页插件修改来的11111111
+kingPaging  根据kkpager分页插件修改来的,可以一个页面定义多个分页
 =======================
-pager_darkBlue2.html  可以一个页面定义多个分页
+pager_darkBlue2.html  
 
 ```html
 <script type="text/javascript">
