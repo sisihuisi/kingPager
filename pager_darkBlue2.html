@@ -9,6 +9,7 @@
 	</style>
 </head>
 <body>
+
 	
 	
 <div style="width:800px;margin:0 auto;">
@@ -16,6 +17,8 @@
 		<div id="kingPager2" class="kingPager"></div>
 		<div id="kingPager3" class="kingPager"></div>
 </div>
+
+
 
 <script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 <script src="js/kingPager.js" type="text/javascript"></script>
@@ -26,11 +29,16 @@ function getParameter(name) {
 	if (r!=null) return unescape(r[2]); return null;
 }
 			
+
+			
 //init
 var totalPage = 30;
 var totalRecords = 50;
 var pageNo = getParameter('pno');
 if(!pageNo){pageNo = 1;}
+
+
+
 
 $(function(){
 	var obj1 = {
@@ -71,7 +79,7 @@ $(function(){
 //			}
 	};
    $("#kingPager").kingPager(obj1);
-   $("#kingPager2").kingPager(obj1);
+   $("#kingPager2").kingPager(obj2);
    $("#kingPager3").kingPager(obj1);
 
 })
